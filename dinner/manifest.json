@@ -1,0 +1,22 @@
+{
+  "name": "dinner",
+  "version": "1.0",
+  "manifest_version":2,
+  "description": "加班吃饭报名.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "加班小分队",
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "http://172.16.10.127:7777/ifan/submitOrder"
+  ],
+  "background": {
+          "scripts": ["js/background.js"]
+      },
+  "web_accessible_resources": [
+    "icon.png"
+  ]
+}

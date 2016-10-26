@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>加班小分队</title>
+  <meta charset="utf-8">
+	 <style>
+		 body{
+			 width: 180px;
+			 height: 75px;
+		 }
+		 #form input{
+			 margin-top: 2px;
+		 }
+		 #form button{
+			 margin-top:5px;
+		 }
+		 #choice button{
+			 width: 80px;
+			 height: 40px;
+			 margin-top: 20px;
+			 margin-left: 5px;
+		 }
+	 </style>
+ </head>
+ <body>
+	<form id="form" style="display: none;">
+		<input id="workNumber" type='text' name='workNumber' placeholder="工号"/>
+		<input id="password"   type="password" name="password" placeholder="密码"/>
+		<button id="doSubmit" type="button">登录</button>
+		<button type='reset'>重置</button>
+	</form>
+	<iframe id="iframeForm" name="iframeForm" style="display:none;"></iframe>
+	<div id="choice">
+		<button id="eat">吃饭</button>
+		<button id="cancel">不吃了</button>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/action.js"></script>
+ </body>
+</html>
